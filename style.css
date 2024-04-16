@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.gameBoardContainer {
+    width: 500px;
+    height: 850px;
+    margin: 0 auto;
+    display: grid;
+    grid-template: 50px 100px 1fr 100px / 1fr;
+    background-color: cadetblue;
+    color: black;
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.gameBoardContainer > h2 {
+    grid-row: 1 / 2;
+    margin: 0 auto;
+}
+
+.playersStats {
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.gameBoard {
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 10px;
+    margin: 10px;
+}
+
+.square {
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.square:focus {
+    box-shadow: 3px 3px 5px #7d8af0;
+}
+
+.result {
+    grid-row: 4 / 5;
+    display: none;
+    margin: 0 auto;
+}
