@@ -48,7 +48,7 @@ html {
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 3px 3px 5px black;
-    font-size: 60px;
+    font-size: 75px;
     font-weight: bolder;
 }
 
@@ -56,8 +56,14 @@ html {
     box-shadow: 3px 3px 5px #7d8af0;
 }
 
+.stat {
+    font-size: 25px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
 .result {
     grid-row: 4 / 5;
-    display: none;
-    margin: 0 auto;
+    margin: 10px;
+    font-family: 'Times New Roman';
 }
