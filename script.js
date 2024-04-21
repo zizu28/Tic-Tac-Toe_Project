@@ -82,6 +82,9 @@ const Game = function(){
                             !player1.sort().toString().includes(pattern.toString()) || !player2.sort().toString().includes(pattern.toString())
                         )){
                             reset();
+                            selectors.result.textContent = 'It\'s a draw';
+                            selectors.stat1.textContent = '';
+                            selectors.stat2.textContent = '';
                         }
                         else{
                             continue
